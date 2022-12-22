@@ -1,0 +1,184 @@
+.container{
+    display: grid;
+    grid-template-columns: 100px auto auto;
+    grid-template-rows: repeat(5,70px);
+    grid-gap: 10px;
+
+}
+.box{
+    border: 1px solid black;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.box1{
+   grid-column:1/3 ;
+    grid-row: 1/2;
+    background-color: black;
+}
+.box2{
+background-color: darkgoldenrod;
+grid-column:3/4 ;
+grid-row: 1/2;}
+.box3{
+    background-color:darkgoldenrod;
+    grid-column:1/2 ;
+    grid-row: 2/5;
+}
+    .box4{
+       background-color: rgb(188, 178, 178);
+        grid-column:2/4 ;
+        grid-row: 2/4;}
+        .box5{
+       background-color: black;
+            grid-column:2/3 ;
+            grid-row: 4/5;}
+            .box6{
+         background-color: darkgoldenrod;
+                grid-column:3/4 ;
+                grid-row: 4/5;}
+                .box7{
+            background-color: rgb(210, 201, 201);
+                    grid-column:1/4 ;
+                    grid-row: 5/6;}
+
+@media screen and (min-width:240px) and (max-width:1000px) {
+                  .container{
+                           grid-template-columns:auto;
+                           grid-template-rows: repeat(7,100px);
+                           grid-gap:15px;
+                           
+                        }
+                        .box1{
+                            grid-column: 1/2;
+                            grid-row: 1/2;
+
+                        }
+                        .box2{
+                            grid-column: 1/2;
+                            grid-row: 2/3;
+
+                        }
+                        .box3{
+                            grid-column: 1/2;
+                            grid-row: 3/4;
+
+                        }
+                        .box4{
+                            grid-column: 1/2;
+                            grid-row: 4/5;
+
+                        }
+                        .box5{
+                            grid-column: 1/2;
+                            grid-row: 5/6;
+
+                        }
+                        .box6{
+                            grid-column: 1/2;
+                            grid-row: 6/7;
+
+                        }
+                        .box7{
+                            grid-column: 1/2;
+                            grid-row: 7/8;
+
+                        }                    
+                    }
+.head{
+    background-image: url(./imge/pexels-oliver-sjöström-1005417.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:auto;
+    width: 100%;
+
+}
+
+.nav{
+    background-color: aqua;
+}
+.logo{
+    height: 50px;
+}
+ul{
+    float: right;
+}
+li{
+display: inline-block;
+padding:0px 50px;
+border-radius: 10px;
+border: 2px solid black;
+font-size: 20px;
+
+}
+.nav2{
+    text-align: center;
+   padding-top: 300px;
+   font-size: 50px;
+}
+button{
+    padding:50px;
+    background-color: cornflowerblue;
+    width: 150px;
+    height: 10px;
+    text-align: center;
+    border-radius: 20px;
+}
+.main{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction:row;
+    margin: 50px;
+    
+    
+}
+.child{
+    background-color: aqua;
+    margin: 10px;
+    border: 1px solid black;
+    height:auto;
+    width: 500px;
+    text-align: center;
+    border-radius: 50px;
+}
+@media screen and (max-width:400px) {
+    .main{
+        
+        flex-direction: column;
+       
+        padding-right: 500px;
+       
+        margin-left: 0px;}
+        .child{
+            height: 150px;
+            width: 300px;
+        }
+      button{
+       background-color:red;
+      }   
+}
+.grid{
+    display: grid;
+    grid-template-columns: 100px auto auto auto;
+    grid-template-rows: repeat(5,100px);
+    grid-gap: 10px;
+
+}
+.grid1{
+    border: 2px solid rebeccapurple;
+   border-radius: 20px;
+    text-align: center;
+    border: solid black;
+
+}
+.grid0{
+    grid-template-columns: 1/5;
+    grid-template-rows: 1/3;
+    background-color: aqua;
+}
+.grid2{
+    background-color: blue;
+    grid-template-columns: 1/4;
+    grid-template-rows:2/4;
+}
